@@ -1,0 +1,159 @@
+/* contenedor principal */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 8lvh;
+    height: 8lvh;
+    position: fixed;
+    top: 0;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+/* titulo */
+
+nav h1{
+    font-family: var(--font-name);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    color: #000;
+    margin-left: 2rem;
+}
+
+/* links */
+
+nav .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5vw;
+}
+
+nav .links a{
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+/* Efecto de subrayado  al pasar el mouse por encima del enlace */
+
+.links a:after {
+    display: block;
+    content: '';
+    margin-top: 0.2rem;
+    border-bottom: solid 2px var(--color-pink);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .links a:hover:after {
+    transform: scaleX(1);
+  }
+  
+
+/* boton */
+
+nav .btn{
+    margin-right: 2rem;
+}
+
+/* elementos ocultos para vista de escritorio */
+
+nav .portfolio{
+    display: none;
+}
+
+.burguer{
+    display: none;
+}
+
+
+/* codigo adaptable para dispositivos mobiles */
+
+@media screen and (max-width: 1050px){
+    nav h1{
+        margin-left: 1rem;
+    }
+
+    nav .btn{
+        margin-right: 1rem;
+    }
+
+    nav .links{
+        gap: 2vw;
+    }
+
+    nav .links a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    nav{
+      background: var(--color-text);
+    }
+
+    nav h1{
+      color: #fff;
+    }
+
+    nav .btn{
+        display: none;
+    }
+
+    .links {
+        position: absolute;
+        top: -700px;
+        right: -2000px;
+        text-align: center;
+        margin-right: 1rem;
+    }
+  
+    .links.active{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: right;
+        gap: 0.5rem;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        background: var(--color-text);
+    }
+
+    .links.active a{
+      color: #fff;
+      padding: 0.3rem 1rem;
+    }
+
+    .links a:after {
+        display: none;
+    }
+      
+    .links a:hover{
+        color: var(--color-pink);
+    }
+      
+    .burguer{
+        display: flex;
+    }
+
+    nav .portfolio{
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .links.active{
+        top: 50px;
+    }
+}
