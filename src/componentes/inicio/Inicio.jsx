@@ -8,7 +8,7 @@ const Inicio = () => {
       <p>Incremente sus ventas atrayendo clientes potenciales con una estrategia de marketing ajustada a su modelo de negocio</p>
       <div className='contenedor-btn'>
         <a className='btn' href="#">Ver Servicios</a>
-        <a className='btn-alt' href="#">Novedades</a>
+        <a className='btn-alt' href="#novedades">Novedades</a>
       </div>
     </div>
   )

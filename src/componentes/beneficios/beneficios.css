@@ -1,0 +1,214 @@
+.beneficios{
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-items: center;
+    gap: 1.8rem;
+}
+
+.beneficios section:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.w-card{
+    background: var(--color-pink-alt);
+    width: 90%;
+    border-radius: 30px 30px 0 0;
+}
+
+.w-card h3 {
+    font-family: var(--font-title);
+    font-size: clamp(2.2rem, -0.5rem + 3vw, 2.5rem);
+    font-weight: 500;
+    color: var(--color-pink);
+    margin: 1rem 0.5rem;
+}
+
+.w-card p{
+    font-family: var(--font-text);
+    font-size: clamp(1.1rem, 0.2rem + 1vw, 1.2rem);
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 35px;
+    margin: 0.5rem;
+}
+
+.w-card:last-child{
+    border-radius: 0 0 30px 30px;
+}
+
+.w-card .card-body{
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.beneficios .plataformas{
+    width: 90%;
+    background: var(--color-pink-alt);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    
+}
+
+.beneficios .plataformas img{
+    width: 2vw;
+}
+
+
+.beneficios section:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 4rem 0;
+    gap: 0.3rem;
+}
+
+.p-card{
+    background: var(--color-pink-alt);
+    width: 70%;
+    border-radius: 30px;
+    margin: 1rem 0.5rem;
+    padding: 3.3vw 3vw;
+}
+
+.p-card h4{
+    font-family: var(--font-text);
+    color: var(--color-pink);
+    font-size: clamp(1.3rem, -2.3rem + 4vw, 1.7rem);
+    font-weight: 500;
+    text-align: right;
+    margin: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: #fff solid 3px;
+}
+
+.p-card h3{
+    font-family: var(--font-title);
+    font-size: clamp(2.2rem, -0.5rem + 3vw, 2.5rem);
+    font-weight: 500;
+    color: var(--color-pink);
+    margin: 1rem 0.5rem;
+}
+
+.p-card p{
+    font-family: var(--font-text);
+    font-size: clamp(1.3rem, -0.5rem + 2vw, 1.5rem);
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 30px;
+    width: 80%;
+    margin: 0.5rem;
+}
+
+@media screen and (min-width: 1130px) and (max-width: 1439px){
+    .beneficios h3{
+        font-size: clamp(2rem, 1.4841rem + 0.796vw, 2.2rem);
+    }
+
+    .w-card p{
+        font-size: clamp(0.9rem, 0.3841rem + 0.796vw, 1.1rem);
+    }
+
+    .p-card p{
+        font-size: clamp(1.1rem, 0.5841rem + 0.796vw, 1.3rem);
+    }
+    
+}
+
+@media screen and (max-width: 1129px){
+
+    .beneficios{
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin: 3rem 0;
+    }
+
+    .beneficios section:first-child, .beneficios section:last-child{
+        align-items: center;
+        width: 90%;
+        margin: 0.5rem;
+    }
+
+    .beneficios .plataformas {
+        gap: 7vw;
+    }
+    .beneficios .plataformas img{
+        width: 3vw;
+    }
+    
+    .p-card p{
+        width: 95%;
+    }
+
+    .p-card{
+        width: 83%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .beneficios section:first-child, .beneficios section:last-child{
+        width: 100%;
+    }
+
+    .beneficios h3{
+        font-size: clamp(1.2rem, 1.0333rem + 0.5556vw, 1.3rem);
+    }
+
+    .w-card{
+        width: 95%;
+        margin: 1rem;
+        border-radius: 20px;
+    }
+    .w-card:last-child{
+        border-radius: 20px;
+    }
+
+    .w-card .card-body{
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 20px;
+    }
+
+    .w-card p{
+        font-size: 1rem;
+        line-height: 25px;
+        width: 99%;
+    }
+
+    .beneficios .plataformas{
+        width: 95%;
+        background: transparent;
+    }
+
+    .beneficios .plataformas img{
+        width: 30px;
+    }
+
+    .p-card {
+        width: 89%;
+        border-radius: 20px;
+    }
+
+    .p-card p{
+        font-size: 1.2rem;
+    }
+
+}

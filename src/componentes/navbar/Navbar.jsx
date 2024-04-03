@@ -3,6 +3,7 @@ import './navbar.css'
 
 import Burguer from './Burguer';
 const Navbar = () => {
+
   
   const[click, setClick] = useState(false);
   const handleClick = () =>{
@@ -20,7 +21,7 @@ const Navbar = () => {
         <a href="#">Contacto</a>
         <a href="#" className='portfolio'>Portafolio</a>
       </div>
-      <a className='btn' href="#">Ver Portafolio</a>
+      <a className='btn' href="https://www.behance.net/rominabruscagin1" target='_blank'>Ver Portafolio</a>
       <div className="burguer">
         <Burguer click={click} handleClick={handleClick}/> 
       </div>

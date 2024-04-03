@@ -1,0 +1,70 @@
+/* contenedor principal */
+
+.barra{
+    min-height: 30lvh;
+    background: var(--color-text);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    width: 100%;
+}
+
+/* cajas dentro del contenedor principal */
+
+.barra .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem 0;
+}
+
+.barra .box img{
+    width: 70px;
+}
+
+.barra .box p{
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-weight: 500;
+    font-family: var(--font-text);
+    color: #fff;
+    width: min(100% - 30%, 300px );
+}
+
+.barra .box span{
+    color: var(--color-green);
+}
+
+/* codigo adaptable para dispositivos mobiles */
+
+@media screen  and (max-width: 800px) {
+
+    .barra .box img{
+        width: 60px;
+    }
+
+    .barra .box p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen  and (max-width: 600px){
+    .barra{
+        flex-direction: column;
+        gap: 0;
+        padding: 3rem 0;
+    }
+
+    .barra .box{
+        gap: 0;
+    }
+
+    .barra .box p{
+        font-size: 1.2rem;
+    }
+
+}
