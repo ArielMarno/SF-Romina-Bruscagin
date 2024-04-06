@@ -1,0 +1,193 @@
+/* contenedor principal */
+
+.contacto{
+    min-height: 60svh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 0;
+}
+
+/* contenedor de imagen y titulo/botones */
+.contacto .contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: var(--color-pink);
+    width: 90%;
+    border-radius: 30px;
+    padding-top: 2rem;
+}
+
+/* contenedor de imagen */
+
+.contacto .img-contenedor{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacto img{
+    max-width: 500px;
+}
+
+
+/* contenedor de titulo y botones */
+
+.contacto .contenedor article{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacto .contenedor article h2{
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: clamp(3rem, 0.5417rem + 3.3333vw, 4rem);
+    color: #fff;
+    max-width: 700px;
+}
+
+/* contenedor de botones */
+
+.contacto .contenedor-btn{
+    margin: 0;
+}
+
+.contacto .btn{
+    background: #fff;
+    color: var(--color-pink);
+    border: var(--color-pink) solid 2px;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.contacto .btn:hover{
+    background: var(--color-text);
+    color: #fff;
+}
+
+
+.contacto .btn-alt{
+    border: #fff solid 2px;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.contacto .btn-alt:hover{
+    border: var(--color-text) solid 2px;
+}
+
+
+/* codigo adaptable para dispositivos mobiles */
+
+@media screen and (max-width: 1439px){
+
+    .contacto img{
+        width: 400px;
+    }
+
+    .contacto .btn, .contacto .btn-alt{
+        padding: 0.9rem 1.3rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1129px){
+
+    .contacto .contenedor{
+        width: 82%;
+    }
+
+    .contacto img{
+        width: 350px;
+    }
+
+    .contacto .contenedor article h2{
+        font-size: clamp(2.2rem, 0.6078rem + 2.6816vw, 2.5rem);
+    }
+
+    .contacto .contenedor-btn{
+        gap: 1rem;
+    }
+
+    .contacto .btn, .contacto .btn-alt{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+
+    .contacto{
+        min-height: 40svh;
+    }
+
+    .contacto .contenedor {
+     padding: 2rem 0;
+    }
+
+    .contacto .contenedor .img-contenedor{
+        display: none;
+    }
+
+    .contacto .contenedor article {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contacto .contenedor article h2 {
+        font-size: clamp(2.5rem, 0.9681rem + 5.1064vw, 4rem);
+        font-weight: 500;
+        max-width: 95%;
+        padding: 1rem 0;
+        text-align: center;
+        border-bottom: #fff 3px solid;
+        border-top: #fff 3px solid;
+    }
+
+    .contacto .btn{
+        font-weight: 700;
+        padding: 1rem 1.2rem;
+    }
+
+    .contacto .btn:hover{
+        border-color: var(--color-text) ;
+    }
+
+    .contacto .btn-alt{
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .contacto .contenedor{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 580px){
+    .contacto .contenedor article h2 {
+        font-size: 2rem;
+    }
+
+    .contacto .contenedor-btn{
+        gap: 0.3rem;
+    }
+
+    .contacto .btn{
+        font-weight: 600;
+        padding: 1rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contacto .btn-alt{
+        font-weight: 600;
+        padding:  0.8rem 1rem;
+    }
+}

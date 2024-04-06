@@ -1,6 +1,7 @@
 import React from 'react'
 import './card.css'
-const Cards = ({imagen, title, text}) => {
+
+const Card = ({imagen, title, text}) => {
   return (
     <div className='card'>
       <img src={imagen} alt="" />
@@ -12,4 +13,4 @@ const Cards = ({imagen, title, text}) => {
   )
 }
 
-export default Cards
+export default Card

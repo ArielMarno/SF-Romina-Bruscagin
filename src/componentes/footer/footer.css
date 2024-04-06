@@ -1,0 +1,198 @@
+/* contenedor principal */
+
+footer{
+    min-height: 60svh;
+    background: var(--color-text);
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* contenedor de redes y navegador */
+
+footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5rem 5vw;
+    margin-bottom: 3rem;
+    border-bottom: var(--color-green) solid 2px;
+}
+
+/* contenedor lado izquierdo (nombre, servicios y redes) */
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+footer section h2{
+    font-family: var(--font-name);
+    font-size: clamp(3rem, 4vw, 3.5rem);
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+/* contenedor de etiquetas p con servicios */
+
+footer section article{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    line-height: 27px;
+    font-size: 1.1rem;
+    font-family: var(--font-title);
+    font-weight: 300;
+    color: #fff;
+}
+
+/* contenedor de iconos a redes sociales */
+
+footer .contenedor-redes{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+footer .contenedor-redes img{
+    width: 40px;
+}
+
+
+/* contenedor de links lado derecho */
+
+footer .nav-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+footer .nav-footer h4{
+    font-family: var(--font-title);
+    color: #fff;
+    font-weight: 400;
+    font-size: clamp(1rem, -0.3023rem + 1.448vw, 1.2rem);
+    margin: 1rem 0;
+}
+
+/* links */
+
+footer .nav-footer a{
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font-text);
+    font-size: clamp(1rem, 0.3489rem + 0.724vw, 1.1rem);
+}
+
+footer .nav-footer a:last-child{
+    color: var(--color-green);
+}
+
+footer .nav-footer a:hover{
+    transition: all ease-in-out 0.2s;
+    color: var(--color-green);
+}
+
+/* copyright y PP */
+
+footer .copy{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 5vw;
+    margin-bottom: 1rem;
+}
+
+footer .copy p{
+    font-family: var(--font-title);
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+footer .copy p span{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* codigo adaptable para dispositivos mobiles */
+
+@media screen and (max-width: 768px){
+
+    footer .copy{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+    footer .contenedor{
+        margin: 3rem 3vw;
+        margin-bottom: 1rem;
+    }
+
+    footer section article{
+        line-height: 25px;
+        font-size: 1rem;
+    }
+
+    footer section article p span{
+        display: none;
+    }
+
+    footer section h2{
+        font-size: 2.5rem;
+    }
+    
+    /* contenedor de iconos a redes sociales */
+    
+    footer .contenedor-redes{
+        gap: 1rem;
+    }
+    
+    footer .contenedor-redes img{
+        width: 30px;
+    }
+    
+    
+    /* contenedor de links lado derecho */
+    
+    footer .nav-footer{
+        gap: 0.5rem;
+    }
+    
+    footer .nav-footer h4{
+        margin-bottom: 0.5rem;
+    }
+    
+    /* links */
+    
+    footer .nav-footer a{
+        font-size: 0.9rem;
+    }
+
+    /* copy */
+    
+    footer .copy{
+        margin: 0 3vw;
+        margin-bottom: 1rem;
+    }
+    
+    footer .copy p{
+        font-family: var(--font-title);
+        color: #fff;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+}

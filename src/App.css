@@ -23,11 +23,11 @@ body{
   padding: 0.9rem 1.3rem;
   border-radius: 50px;
   text-align: center;
+  border: var(--color-pink) solid 2px;
 }
 
 .btn:hover{
   transition: all  .2s ease-in-out;
   background: var(--color-text);
+  border-color: var(--color-text);
 }
-
-/* */

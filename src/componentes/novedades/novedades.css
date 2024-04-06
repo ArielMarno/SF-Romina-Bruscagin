@@ -1,0 +1,224 @@
+/* contenedor principal */
+
+.novedades{
+    min-height: 60svh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 0;
+}
+
+/* tarjeta novedades */
+
+.linkedin{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    width: 90%;
+    background: var(--color-text);
+    border-radius: 25px;
+}
+
+/* contenedor de imagen */
+
+.linkedin .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+/* imagen 3d */
+
+.linkedin img{
+    width: 600px;
+}
+
+/* contenedor texto */
+
+.linkedin article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem 0 0;
+    max-width: 40%;
+}
+
+/* subtitulo novedades en la parte superior */
+
+.linkedin article h4{
+    width: 100%;
+    text-align: right;
+    font-size: clamp(1.8rem, 0.4909rem + 1.4545vw, 2rem);
+    font-family: var(--font-text);
+    font-weight: 500;
+    color: var(--color-linkedin);
+    border-bottom: #fff 3px solid;
+    padding: 0 0 1rem 0 ;
+}
+
+/* titulo linkedin */
+
+.linkedin article h2{
+    color: #fff;
+    font-size: clamp(5rem, -1.5455rem + 7.2727vw, 6rem);
+    font-family: var(--font-title);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* parrafo */
+
+.linkedin article p{
+    color: #fff;
+    font-family: var(--font-text);
+    font-size: clamp(1.3rem, -0.0091rem + 1.4545vw, 1.5rem);
+    line-height: 40px;
+    margin: 1rem 0;
+}
+
+/* boton */
+
+.linkedin .btn{
+    background: var(--color-linkedin);
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    border: 2px solid var(--color-linkedin);
+}
+
+.linkedin .btn:hover{
+    transition: all ease-in-out 0.2s;
+    background: #fff;
+    color: var(--color-linkedin);
+}
+
+
+/* codigo adaptable para dispositivos mobiles */
+
+@media screen and (max-width: 1439px){
+
+    .linkedin{
+        gap: 1.5rem;
+    }
+
+    .linkedin img{
+        width: 520px;
+    }
+
+    .linkedin article{
+        padding: 1rem 1rem 0 0;
+        max-width: 40%;
+    }
+
+    .linkedin article h4{
+        font-size: clamp(1.3rem, 0.2074rem + 1.5484vw, 1.6rem);
+    }
+
+    .linkedin article h2{
+        font-size: clamp(2rem, -5.2839rem + 10.3226vw, 4rem);
+    }
+    
+    /* parrafo */
+    
+    .linkedin article p{
+        font-size: clamp(1rem, 0.2716rem + 1.0323vw, 1.2rem);
+        line-height: 30px;
+    }
+
+    .linkedin .btn{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+    }
+
+}
+
+@media screen and (max-width: 1129px){
+    .linkedin{
+        width: 82%;
+        gap: 1rem;
+        align-items: flex-end;
+    }
+
+    .linkedin img{
+        width: 350px;
+    }
+
+    .linkedin article{
+        padding: 1rem 1rem 0 0;
+        max-width: 45%;
+    }
+
+    .linkedin article h4{
+        font-size: clamp(1.3rem, 0.2074rem + 1.5484vw, 1.6rem);
+    }
+
+    .linkedin article h2{
+        font-size: clamp(2rem, -5.2839rem + 10.3226vw, 4rem);
+    }
+    
+    /* parrafo */
+    
+    .linkedin article p{
+        font-size: clamp(1rem, 0.2716rem + 1.0323vw, 1.2rem);
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+
+    .linkedin .btn{
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+
+    }
+}
+
+@media screen and (max-width: 950px){
+
+    .linkedin .contenedor{
+        display: none;
+    }
+
+    .linkedin article{
+        max-width: 90%;;
+        margin-left: 1rem;
+    }
+
+    .linkedin article h4{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .linkedin article h2{
+        font-size: 3rem;
+    }
+
+    .linkedin article p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .linkedin .btn{
+        margin: 1rem 0 2rem 0;
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .novedades{
+        padding: 0;
+    }
+
+    .linkedin{
+        width: 95%;
+    }
+
+    .linkedin article p{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}

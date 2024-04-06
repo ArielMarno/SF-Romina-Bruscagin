@@ -1,0 +1,53 @@
+/* contenedor principal */
+
+.servicios{
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.servicios h3 {
+    font-family: var(--font-title);
+    font-size: clamp(2.5rem, -4.0455rem + 7.2727vw, 3.5rem);
+    font-weight: 500;
+    width: 90%;
+    text-align: right;
+    margin: 2rem; 
+}
+
+/* grilla contenedor de tarjetas */
+
+.card-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+
+/* codigo adaptable para dispositivos mobiles */
+
+@media screen and (max-width: 1129px) {
+
+    .servicios h3{
+        width: 82%;
+    }
+    .card-contenedor{
+        grid-template-columns: 1fr;
+        width: 82%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .card-contenedor{
+        width: 95%;
+    }
+}

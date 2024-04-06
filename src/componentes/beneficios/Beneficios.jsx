@@ -11,7 +11,7 @@ import x from '../../assets/beneficios/x.png';
 
 const Beneficios = () => {
   return (
-    <div className='beneficios'>
+    <div className='beneficios' id='beneficios'>
       <section>
         <div className='w-card'>
           <div className='card-body'>

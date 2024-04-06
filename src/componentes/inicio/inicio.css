@@ -69,6 +69,7 @@
 }
 
 .contenedor-btn .btn-alt:hover{
+    transition: all  .2s ease-in-out;
     background: var(--color-text);
     color: #fff;
 }
@@ -138,16 +139,18 @@
         font-size: 3.6rem;
         line-height: 65px;
         max-width: 350px;
+        margin-left: 0.5rem;
     }
 
     /* parrafo */
 
     .inicio p{
-        width: 340px;
+        width: 100%;
         font-weight: 500;
-        font-size: 1.2rem;
-        margin: 1rem 0 0.5rem 1rem;
+        font-size: 1.1rem;
+        margin: 1rem 0 0.5rem 0;
         text-align: left;
     }
+
 
 }

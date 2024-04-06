@@ -16,12 +16,12 @@ const Navbar = () => {
       <h1>Bruscagin Romina</h1>
       <div className={`links ${click ? 'active' : ''}`}>
         <a href="#">Inicio</a>
-        <a href="#">Beneficios</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
-        <a href="#" className='portfolio'>Portafolio</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://www.behance.net/rominabruscagin1" target='_blank' rel="noopener noreferrer" className='portfolio'>Portafolio</a>
       </div>
-      <a className='btn' href="https://www.behance.net/rominabruscagin1" target='_blank'>Ver Portafolio</a>
+      <a className='btn' href="https://www.behance.net/rominabruscagin1" target='_blank' rel="noopener noreferrer">Ver Portafolio</a>
       <div className="burguer">
         <Burguer click={click} handleClick={handleClick}/> 
       </div>
