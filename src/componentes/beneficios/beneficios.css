@@ -4,12 +4,14 @@
     min-height: 100svh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     justify-items: center;
     gap: 1.8rem;
     padding: 3rem 0;
-}
 
+}
+.beneficios section{
+    margin-top: 5rem;
+}
 /* contenedor de tarjetas blancas */
 
 .beneficios section:first-child{
@@ -153,7 +155,7 @@
     .beneficios section:first-child, .beneficios section:last-child{
         align-items: center;
         width: 90%;
-        margin: 0.5rem;
+        margin: 0.7rem;
     }
 
     .beneficios .plataformas {

@@ -34,7 +34,7 @@ const Footer = () => {
 
 
       <div className='copy'>
-        <p>Terminos y Condiciones | Politicas de Privacidad</p>
+        <p>Diseñado y desarrollado por <span>Sunflower Agencia Digital.</span></p>
         <p>Copyright© 2024 <span>Bruscagin Romina Marketing Digital</span>. Todos los derechos reservados.</p>
       </div>
 
