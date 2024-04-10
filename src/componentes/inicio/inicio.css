@@ -151,6 +151,11 @@
         margin: 1rem 0 0.5rem 0;
         text-align: left;
     }
+    
+    /* boton empecemos */
 
+    .contenedor-btn .btn{
+        padding: 0.8rem 1rem;
+    }
 
 }

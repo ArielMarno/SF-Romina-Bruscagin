@@ -176,18 +176,15 @@
         font-size: 2rem;
     }
 
-    .contacto .contenedor-btn{
-        gap: 0.3rem;
-    }
-
     .contacto .btn{
         font-weight: 600;
-        padding: 1rem 1rem;
+        padding: 1rem;
         font-size: 0.9rem;
     }
 
     .contacto .btn-alt{
         font-weight: 600;
         padding:  0.8rem 1rem;
+        font-size: 0.9rem;
     }
 }

@@ -192,7 +192,12 @@ footer .copy p span{
     footer .copy p{
         font-family: var(--font-title);
         color: #fff;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         margin: 0;
+        padding: 0;
+    }
+    footer .copy p span{
+        font-size: 0.7rem;
+        font-weight: 500;
     }
 }
