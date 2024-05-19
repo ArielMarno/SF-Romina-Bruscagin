@@ -19,9 +19,9 @@ const Navbar = () => {
         <a href="#beneficios">Beneficios</a>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
-        <a href="https://www.behance.net/rominabruscagin1" target='_blank' rel="noopener noreferrer" className='portfolio'>Portafolio</a>
+        <a href="https://www.behance.net/rominabruscagin1" className='portfolio'>Portafolio</a>
       </div>
-      <a className='btn' href="https://www.behance.net/rominabruscagin1" target='_blank' rel="noopener noreferrer">Ver Portafolio</a>
+      <a className='btn' href="https://www.behance.net/rominabruscagin1">Ver Portafolio</a>
       <div className="burguer">
         <Burguer click={click} handleClick={handleClick}/> 
       </div>

@@ -55,7 +55,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: fit-content;
     background: transparent;
     font-family: var(--font-text);
     color: var(--color-text);
@@ -154,8 +153,15 @@
     
     /* boton empecemos */
 
+    .contenedor-btn{
+        gap: 0.5rem;
+    }
     .contenedor-btn .btn{
-        padding: 0.8rem 1rem;
+        padding: 0.8rem 1.1rem;
+    }
+
+    .inicio .btn, .inicio .btn-alt{
+        font-size: 0.9rem;
     }
 
 }

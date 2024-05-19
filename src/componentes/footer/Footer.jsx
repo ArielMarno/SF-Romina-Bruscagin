@@ -15,9 +15,9 @@ const Footer = () => {
             <p><span>Servicios de </span>Marketing Digital <br /> Social Media Manager <br /> Community Manager</p>
           </article>
           <div className='contenedor-redes'>
-            <a href="https://www.linkedin.com/in/romina-bruscagin-digital/" target='_blank' rel="noopener noreferrer"><img src={linkedin} alt="icono linkedin" /></a>
-            <a href="https://www.instagram.com/rominabruscagindigital" target='_blank' rel="noopener noreferrer"><img src={instagram} alt="icono instagram" /></a>
-            <a href="https://wa.me/5492974163066" target='_blank' rel="noopener noreferrer"><img src={whatsapp} alt="icono whatsapp" /></a>
+            <a href="https://www.linkedin.com/in/romina-bruscagin-digital/"><img src={linkedin} alt="icono linkedin" /></a>
+            <a href="https://www.instagram.com/rominabruscagindigital"><img src={instagram} alt="icono instagram" /></a>
+            <a href="https://wa.me/5492974163066"><img src={whatsapp} alt="icono whatsapp" /></a>
             <a href="mailto:rominabruscagindigital@gmail.com"><img src={mail} alt="icono arroba" /></a>
           </div>
         </section>
@@ -34,7 +34,7 @@ const Footer = () => {
 
 
       <div className='copy'>
-        <p>Diseñado y desarrollado por <span>Sunflower Agencia Digital.</span></p>
+        <p>Diseñado y desarrollado por <a href="https://sunfloweragencia.com/">SunFlower Agencia Digital.</a></p>
         <p>Copyright© 2024 <span>Bruscagin Romina Marketing Digital</span>. Todos los derechos reservados.</p>
       </div>
 

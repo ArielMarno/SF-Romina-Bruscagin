@@ -119,8 +119,10 @@ footer .copy p{
     margin: 0;
 }
 
-footer .copy p span{
-    font-size: 0.8rem;
+footer .copy p a{
+    text-decoration: none;
+    color: var(--color-green);
+    font-size: 0.7rem;
     font-weight: 500;
 }
 
@@ -137,9 +139,12 @@ footer .copy p span{
 }
 
 @media screen and (max-width: 580px){
+
+    footer{
+        min-height: 50svh;
+    }
     footer .contenedor{
         margin: 3rem 3vw;
-        margin-bottom: 1rem;
     }
 
     footer section article{

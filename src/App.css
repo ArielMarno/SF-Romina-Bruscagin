@@ -13,7 +13,6 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: fit-content;
   text-decoration: none;
   color: #fff;
   font-family: var(--font-text);

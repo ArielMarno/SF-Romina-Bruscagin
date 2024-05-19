@@ -12,8 +12,8 @@ const Contacto = () => {
             <article>
                 <h2>Impulsa tu negocio hacia el éxito</h2>
                 <div className='contenedor-btn'>
-                    <a href="https://forms.gle/KXdiAmx6arDcbVsE8" target='_blank' rel="noopener noreferrer" className='btn'>Empecemos</a>
-                    <a href="https://wa.me/5492974163066" target='_blank' rel="noopener noreferrer" className='btn-alt'>Mas información</a>
+                    <a href="https://forms.gle/KXdiAmx6arDcbVsE8" className='btn'>Empecemos</a>
+                    <a href="https://wa.me/5492974163066" className='btn-alt'>Mas información</a>
                 </div>
             </article>
         </div>
