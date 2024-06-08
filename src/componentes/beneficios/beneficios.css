@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     gap: 1rem;
     padding: 3rem 0;
 }
@@ -91,7 +92,7 @@
 
 .p-card{
     background: var(--color-pink-alt);
-    width: 85%;
+    width: 86%;
     border-radius: 30px;
     margin: 0;
     padding: 3rem 1rem;
@@ -103,7 +104,7 @@
     font-size: clamp(1.3rem, -2.3rem + 4vw, 1.7rem);
     font-weight: 500;
     text-align: right;
-    margin: 0.4rem 3rem;
+    margin: 0.4rem 2.5rem;
     padding-bottom: 1rem;
     border-bottom: #fff solid 3px;
 }
@@ -113,7 +114,7 @@
     font-size: clamp(2.2rem, -0.5rem + 3vw, 2.5rem);
     font-weight: 500;
     color: var(--color-pink);
-    margin: 1rem 3rem;
+    margin: 1rem 2.5rem;
 }
 
 .p-card p{
@@ -123,14 +124,13 @@
     font-weight: 500;
     line-height: 30px;
     max-width: 570px;
-    margin: 0.5rem 3rem;
+    margin: 0.5rem 2.5rem;
 }
 
 
 /* codigo adaptable para dispositivos mobiles */
 
-
-@media screen and (min-width: 1129px) and (max-width: 1439px){
+@media screen and (max-width: 1439px){
     .beneficios h3{
         font-size: clamp(2rem, 1.4841rem + 0.796vw, 2.2rem);
     }
@@ -175,7 +175,7 @@
     }
 
     .p-card h4, .p-card h3, .p-card p{
-        margin: 1rem;
+        margin: 2rem;
     }
     
     .w-card, .p-card p{
