@@ -12,7 +12,7 @@ import x from '../../assets/beneficios/x.png';
 const Beneficios = () => {
   return (
     <div className='beneficios' id='beneficios'>
-      <section>
+      <section className='container_w-card'>
         <div className='w-card'>
           <div className='card-body'>
             <h3>Reducción del costo</h3>
@@ -35,7 +35,7 @@ const Beneficios = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className='container_p-card'>
         <div className='p-card'>
           <h4>Beneficios</h4>
           <h3>Conexión Directa</h3>
